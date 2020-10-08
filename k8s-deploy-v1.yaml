@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: spring-boot-lazy
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: spring-boot-lazy
+    spec:
+      containers:
+        - name: spring-boot-lazy
+          image: 'npdangkhoa/spring-boot-lazy:v0.1'
+          ports:
+            - containerPort: 8080
