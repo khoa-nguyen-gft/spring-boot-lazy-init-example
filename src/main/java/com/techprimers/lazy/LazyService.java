@@ -11,6 +11,6 @@ public class LazyService {
     }
 
     public String hello() {
-        return "hello youtube";
+        return "hello youtube by version 2.0";
     }
 }
